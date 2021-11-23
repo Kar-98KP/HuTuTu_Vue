@@ -16,7 +16,6 @@
         <!-- 用户名 -->
         <el-form-item label="" prop="username">
           <el-input
-            class="size"
             v-model="loginFrom.username"
             placeholder=" 请输入用户名"
             prefix-icon="el-icon-s-custom"
@@ -25,7 +24,6 @@
         <!-- 密码 -->
         <el-form-item label="" prop="password">
           <el-input
-            class="size"
             v-model="loginFrom.password"
             placeholder=" 请输入密码"
             prefix-icon="el-icon-lock"
@@ -34,9 +32,7 @@
         </el-form-item>
         <!-- 按钮 -->
         <el-form-item class="btns">
-          <el-button class="size" type="primary" round @click="login"
-            >登录</el-button
-          >
+          <el-button type="primary" round @click="login">登录</el-button>
           <el-button class="size" type="info" round @click="resetLoginFrom"
             >重置</el-button
           >
@@ -59,11 +55,11 @@ export default {
       loginFromRules: {
         username: [
           { required: true, message: '请输入用户名', trigger: 'blur' },
-          { min: 3, max: 10, message: '长度在3—10个字符', trigger: 'blur' },
+          { min: 3, max: 10, message: '长度在3~10个字符', trigger: 'blur' },
         ],
         password: [
           { required: true, message: '请输入密码', trigger: 'blur' },
-          { min: 6, max: 15, message: '长度在6—15个字符', trigger: 'blur' },
+          { min: 6, max: 15, message: '长度在6~15个字符', trigger: 'blur' },
         ],
       },
     }
@@ -131,7 +127,7 @@ export default {
     width: 100%;
     padding: 0 150px;
     box-sizing: border-box;
-    .size {
+    .el-input {
       font-size: 20px;
     }
   }
