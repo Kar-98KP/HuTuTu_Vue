@@ -26,3 +26,17 @@ body,
 .el-pagination {
     margin-top: 15px;
 }
+input{
+    width: 80%;
+}
+
+.el-dialog__title{
+    font-size: 24px;
+}
+
+.el-input__inner{
+    font-size: 20px;
+}
+.el-cascader-panel {
+    font-size: 18px;
+}
