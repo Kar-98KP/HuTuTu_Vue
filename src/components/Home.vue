@@ -40,8 +40,8 @@
 
             <!-- 二级菜单 -->
             <el-menu-item
-              :index="'/' + subItem.path"
               v-for="subItem in item.children"
+              :index="'/' + subItem.path"
               :key="subItem.id"
               @click="savaNavState('/' + subItem.path)"
             >

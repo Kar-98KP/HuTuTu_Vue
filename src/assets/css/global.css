@@ -40,3 +40,15 @@ input{
 .el-cascader-panel {
     font-size: 18px;
 }
+.el-alert__title {
+    font-size: 20px;
+  }
+  .el-tabs__item{
+      font-size: 18px;
+  }
+  .el-steps{
+      margin: 15px 0;
+  }
+  .ql-editor{
+      min-height: 300px;
+  }
