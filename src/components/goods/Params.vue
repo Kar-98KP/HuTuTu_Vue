@@ -100,7 +100,7 @@
           ><el-button
             type="primary"
             :disabled="isBtnDisabled"
-            @click="AddDialogVisible = true"
+            @click="addDialogVisible = true"
             >添加属性</el-button
           >
           <!-- 静态属性表格 -->

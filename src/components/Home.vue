@@ -4,7 +4,7 @@
     <el-header style="height: 130px"
       ><div>
         <img src="../assets/糊涂涂点餐.png" alt="" />
-        <span>糊涂涂后台管理系统</span>
+        <span>电商后台管理系统</span>
       </div>
       <el-button type="inof" @click="logout">退出</el-button></el-header
     >

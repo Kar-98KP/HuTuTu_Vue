@@ -71,8 +71,10 @@ export default {
         if (!valid) return
         const { data: res } = await this.$http.post('login', this.loginFrom)
         if (res.meta.status !== 200) {
+          console.log(res)
           this.$message.error('登录失败！请检查用户名或密码错误')
         } else {
+          console.log(res)
           this.$message.success('登录成功！欢迎使用糊涂涂点餐后台')
         }
         //登录成功后将token保存在sessionStorage

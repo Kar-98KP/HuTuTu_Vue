@@ -297,10 +297,10 @@ export default {
           this.addForm.attrs.push(newInfo)
         })
         from.attrs = this.addForm.attrs
-        console.log(from)
         // 发起添加请求
         const { data: res } = await this.$http.post('goods', from)
         if (res.meta.status !== 201) {
+          console.log(res)
           return this.$message.error('添加商品失败~')
         }
         this.$message.success('添加商品成功~')
